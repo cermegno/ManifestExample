@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Second Workshop Voting App</title>
+    </head>
+    <body>
+		<h1>CHOOSE YOUR PREFERENCE FOR SECOND WORKSHOP</h1>
+		<br>
+		<form method="post" action="{{ url_for('suthankyou') }}">
+
+			<b>WHO AM I?</b>			
+			<select name="name">
+			<option value="Clive">Clive</option>
+			<option value="Daniel">Daniel</option>
+			<option value="Michael Akayan">Michael Akayan</option>
+			<option value="Theo">Theo</option>
+			<option value="Phil">Phil</option>
+			<option value="Greg">Greg</option>
+			</select>
+			<br><br>
+		
+			<b>13-14 July</b>
+			<input type="radio" name="date1" value="1" checked="checked" />Yes
+			<input type="radio" name="date1" value="0"  />No<br>
+			<br>
+			<b>20-21 July</b>
+			<input type="radio" name="date2" value="1" checked="checked" />Yes
+			<input type="radio" name="date2" value="0"  />No<br>
+			<br>
+			<b>27-28 July</b>
+			<input type="radio" name="date3" value="1" checked="checked" />Yes
+			<input type="radio" name="date3" value="0"  />No<br>
+			<br>
+			<b>3-4 August</b>
+			<input type="radio" name="date4" value="1" checked="checked" />Yes
+			<input type="radio" name="date4" value="0"  />No<br>
+			<br>
+		
+			<br>
+		  <input type="submit" value="SUBMIT"/>
+		</form>
+    </body>
+</html>
+ 
