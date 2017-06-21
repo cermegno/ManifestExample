@@ -1,0 +1,20 @@
+---
+# this manifest deploys two applications
+# apps are in vote and res subdirectories
+# the manifest file lives in the parent directory
+# cf push should be run from the parent directory
+applications:
+- name: vote2wpp
+  memory: 64M
+  disk_quota: 256M
+  instances: 1
+  path: ./vote/
+  services:
+  - newRedis
+- name: res2wpp
+  memory: 64M
+  disk_quota: 256M
+  instances: 1
+  path: ./res/
+  services:
+  - newRedis
